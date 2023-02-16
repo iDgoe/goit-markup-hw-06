@@ -286,6 +286,7 @@ button {
   height: 112px;
   background-color: var(--btn-white-color);
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 .our-team {
@@ -389,6 +390,7 @@ button {
 
 .footer-wrap {
   display: flex;
+  align-items: baseline;
 }
 .footer-subscribe {
   margin-left: 80px;
@@ -436,8 +438,17 @@ button {
   outline: none;
 }
 
+.footer-form-input::placeholder {
+   font-size: 12px;
+line-height: 2.0;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-form-message::placeholder {
   color: rgba(255, 255, 255, 0.6);
+   
+
 }
 
 .footer-btn {
@@ -449,7 +460,7 @@ button {
   font-family: inherit;
   font-weight: 500;
   margin-left: 24px;
-  height: 100%;
+  height: 40px;
   padding: 8px 64px 8px 24px;
   color: var(--white-text-btn-color);
   background-color: var(--btn-color);
@@ -649,7 +660,7 @@ button {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 8px;
   gap: 24px;
 }
@@ -702,7 +713,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   background-color: var(--modal-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -818,6 +829,9 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
+  font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
 }
 
 .modal-form-message::placeholder {
@@ -897,5 +911,8 @@ letter-spacing: 0.04em;
 }
 
 .modal-policy {
-  
+  font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: var(--btn-color);
 }
